@@ -1,5 +1,7 @@
 [
-	["<client 1 address>", <gpu_id_0>, "<path to the **code** folder on client 1>/CIFAR/client.py"],
-	["<client 2 address>", <gpu_id_0>, "<path to the **code** folder on client 2>/CIFAR/client.py"],
-	["<client 2 address>", <gpu_id_1>, "<path to the **code** folder on client 2>/CIFAR/client.py"]
+	["10.**.** ...", 0, "/.../PathLevel-EAS-master/code/CIFAR/client.py"],
+	["10.**.** ...", 1, "/.../PathLevel-EAS-master/code/CIFAR/client.py"],
+	["10.**.** ...", 2, "/.../PathLevel-EAS-master/code/CIFAR/client.py"]
 ]
+
+# note: 10.**.** ... is the server ID. such as 162.119.24.  
