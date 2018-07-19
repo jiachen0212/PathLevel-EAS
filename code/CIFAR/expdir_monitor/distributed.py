@@ -151,7 +151,7 @@ class ClusterController:
 					occupy_num += 1
 				else:
 					available_servers[_i] = True
-		return available_servers, occupy_num
+		return available_servers, occupy_num   
 	
 	def get_idle_server(self):
 		""" not block """
