@@ -85,7 +85,7 @@ class RemoteController:
 	
 	@property
 	def exe_cmd(self):
-		return 'CUDA_VISIBLE_DEVICES={gpuid} python3 {executive}'.format(
+		return 'CUDA_VISIBLE_DEVICES={gpuid} /..path to ypur python/  {executive}'.format(
 			executive=self.executive,
 			gpuid=self.gpuid
 		)
