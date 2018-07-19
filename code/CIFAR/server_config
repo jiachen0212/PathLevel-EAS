@@ -13,3 +13,4 @@ usage:
 ]
 
 # note: 10.**.** ... is the server ID. such as 162.119.24.  
+# and 1, 2, 3 is the ID of the GPU ....
