@@ -1,0 +1,18 @@
+# about the server.config:
+[
+	["10.*.**.**", 0, "/path to/PathLevel-EAS-master/code/CIFAR/client.py"],
+	["10.*.**.**", 1, "/path to/PathLevel-EAS-master/code/CIFAR/client.py"],
+	["10.*.**.**", 2, "/path to/PathLevel-EAS-master/code/CIFAR/client.py"]
+]
+# 0 1 2 is the GPU ID..
+
+
+# 首先运行arch_search.py,可得到搜索到的,20个epoch上表现较好的框架
+# 接着运行run_exp.py:
+python run_exp.py --path /...path to the searched Netpool path/
+such as:
+python run_exp.py --path CIFAR/placeholder/NetPool/DenseNet/placeholder/#Running_****/
+并把 run_exp.py 中的 train 修改成True:
+parser.add_argument('--train', default=True)
+即在这个框架下训练300个epoch，得到优秀框架基础上的优秀model.
+这样在 /#Running_****/checkpoint 下会得到训练的checkpoint.pth.tar...
