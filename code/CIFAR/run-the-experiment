@@ -11,7 +11,7 @@
 # 接着运行run_exp.py:
 python run_exp.py --path /...path to the searched Netpool path/
 such as:
-python run_exp.py --path CIFAR/placeholder/NetPool/DenseNet/placeholder/#Running_****/
+python run_exp.py --path CIFAR/placeholder/NetPool/DenseNet/placeholder/#Running_****/  (记得把目录下的run.config删掉,不然它里面设置的参数epoch=20是会被调用的...)
 并把 run_exp.py 中的 train 修改成True:
 parser.add_argument('--train', default=True)
 即在这个框架下训练300个epoch，得到优秀框架基础上的优秀model.
