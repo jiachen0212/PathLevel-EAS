@@ -427,9 +427,8 @@ def arch_search_tree_cell(arch_search_folder, exp_settings, max_nets2train,
 							net_config.set_non_ready_layers(valid_loader, nBatch=10, noise=trans_noise_config,
 							                                print_info=False)
 						
-						assert cell_architecture == Tree.build_tree_from_torch_module(net_config.building_block), 'Err'
-						
-						# prepare folder for validation
+						# assert cell_architecture == Tree.build_tree_from_torch_module(net_config.building_block), 'Err'    # I modified it ...				
+                 				# prepare folder for validation
 						if 'Pool' in cell_str or net_config.ops_order == 'bn_act_weight':
 							mimic_run_config = {
 								'src_model_dir': exp_settings[setting_idx][0],
